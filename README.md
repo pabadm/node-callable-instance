@@ -71,7 +71,7 @@ This can also cause problems if your derived class wants to have a `name` or `le
 ```javascript
 var test = new ExampleClass();
 test.name = "hello!";
-console.log(test.name); // Will print 'instanceMethod'
+console.log(test.name); // Will print 'ExampleClass' (constructor.name is used by default)
 
 class NameableClass extends CallableInstance {
   constructor() {
